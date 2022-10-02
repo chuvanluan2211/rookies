@@ -1,0 +1,15 @@
+E:\Rookies6\AssignmentHome\Buoi1\bin\Debug\net6.0\Buoi1.exe
+E:\Rookies6\AssignmentHome\Buoi1\bin\Debug\net6.0\Buoi1.deps.json
+E:\Rookies6\AssignmentHome\Buoi1\bin\Debug\net6.0\Buoi1.runtimeconfig.json
+E:\Rookies6\AssignmentHome\Buoi1\bin\Debug\net6.0\Buoi1.dll
+E:\Rookies6\AssignmentHome\Buoi1\bin\Debug\net6.0\Buoi1.pdb
+E:\Rookies6\AssignmentHome\Buoi1\obj\Debug\net6.0\Buoi1.csproj.AssemblyReference.cache
+E:\Rookies6\AssignmentHome\Buoi1\obj\Debug\net6.0\Buoi1.GeneratedMSBuildEditorConfig.editorconfig
+E:\Rookies6\AssignmentHome\Buoi1\obj\Debug\net6.0\Buoi1.AssemblyInfoInputs.cache
+E:\Rookies6\AssignmentHome\Buoi1\obj\Debug\net6.0\Buoi1.AssemblyInfo.cs
+E:\Rookies6\AssignmentHome\Buoi1\obj\Debug\net6.0\Buoi1.csproj.CoreCompileInputs.cache
+E:\Rookies6\AssignmentHome\Buoi1\obj\Debug\net6.0\Buoi1.dll
+E:\Rookies6\AssignmentHome\Buoi1\obj\Debug\net6.0\refint\Buoi1.dll
+E:\Rookies6\AssignmentHome\Buoi1\obj\Debug\net6.0\Buoi1.pdb
+E:\Rookies6\AssignmentHome\Buoi1\obj\Debug\net6.0\Buoi1.genruntimeconfig.cache
+E:\Rookies6\AssignmentHome\Buoi1\obj\Debug\net6.0\ref\Buoi1.dll
