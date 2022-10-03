@@ -14,11 +14,6 @@ namespace Buoi1 // Note: actual namespace depends on the project name.
             memberList.Add(new Member("le", "tu", "Male", new DateTime(2000, 11, 22), "0981716630", "viet nam", true));
             memberList.Add(new Member("meo", "tuan", "Male", new DateTime(2000, 11, 22), "0981716630", "thai binh", true));
 
-            foreach (Member member in memberList)
-            {
-                member.Display();
-            }
-
             System.Console.WriteLine("----------------");
             System.Console.WriteLine("cau1:List member gender = Male");
 
@@ -60,27 +55,21 @@ namespace Buoi1 // Note: actual namespace depends on the project name.
             }
 
             System.Console.WriteLine("----------------");
-            System.Console.WriteLine("cau4:List member who has birth = 2000");
-
-            foreach (Member member in memberList)
-            {
-                if (member.DOB.Year == 2000)
-                {
-                    member.Display();
-                }
-            }
-
-            System.Console.WriteLine("----------------");
             System.Console.WriteLine("cau5:List member who has born in Ha Noi");
 
-            foreach (Member member in memberList)
+            int index = 0;
+
+            while (index < memberList.Count)
             {
-                if (member.BirthPlace.Contains("Ha Noi"))
+                var member = memberList[index];
+                if (member.BirthPlace == "Ha Noi")
                 {
                     member.Display();
                     break;
                 }
+                ++index;
             }
+
 
             System.Console.WriteLine("----------------");
             System.Console.WriteLine("cau4:List member who has birth year ?");
@@ -89,7 +78,7 @@ namespace Buoi1 // Note: actual namespace depends on the project name.
 
             do
             {
-                option = Convert.ToInt32(Console.Readline());
+                option = Convert.ToInt32(Console.ReadLine());
 
                 switch (option)
                 {
@@ -109,7 +98,7 @@ namespace Buoi1 // Note: actual namespace depends on the project name.
                     case 2:
                         {
                             System.Console.WriteLine("List member who has birth year > 2000");
-                            
+
                             foreach (Member member in memberList)
                             {
                                 if (member.DOB.Year > 2000)
@@ -122,7 +111,7 @@ namespace Buoi1 // Note: actual namespace depends on the project name.
                     case 3:
                         {
                             System.Console.WriteLine("List member who has birth year < 2000");
-                            
+
                             foreach (Member member in memberList)
                             {
                                 if (member.DOB.Year < 2000)
