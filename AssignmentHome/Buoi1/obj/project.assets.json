@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Rookies6\\AssignmentHome\\Buoi1\\Buoi1.csproj",
+      "projectUniqueName": "E:\\Desktop\\rookies\\AssignmentHome\\Buoi1\\Buoi1.csproj",
       "projectName": "Buoi1",
-      "projectPath": "E:\\Rookies6\\AssignmentHome\\Buoi1\\Buoi1.csproj",
+      "projectPath": "E:\\Desktop\\rookies\\AssignmentHome\\Buoi1\\Buoi1.csproj",
       "packagesPath": "C:\\Users\\laptop 2019\\.nuget\\packages\\",
-      "outputPath": "E:\\Rookies6\\AssignmentHome\\Buoi1\\obj\\",
+      "outputPath": "E:\\Desktop\\rookies\\AssignmentHome\\Buoi1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\laptop 2019\\AppData\\Roaming\\NuGet\\NuGet.Config",
