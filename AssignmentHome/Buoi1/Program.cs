@@ -21,7 +21,7 @@ namespace Buoi1 // Note: actual namespace depends on the project name.
             {
                 if (member.Gender == "Male")
                 {
-                    member.Display();
+                    member.DisplayInfo();
                 }
             }
 
@@ -41,7 +41,7 @@ namespace Buoi1 // Note: actual namespace depends on the project name.
             {
                 if (member.Age == max)
                 {
-                    member.Display();
+                    member.DisplayInfo();
                     break;
                 }
             }
@@ -51,7 +51,7 @@ namespace Buoi1 // Note: actual namespace depends on the project name.
 
             foreach (Member member in memberList)
             {
-                member.FullName();
+                member.ShowFullName();
             }
 
             System.Console.WriteLine("----------------");
@@ -64,7 +64,7 @@ namespace Buoi1 // Note: actual namespace depends on the project name.
                 var member = memberList[index];
                 if (member.BirthPlace == "Ha Noi")
                 {
-                    member.Display();
+                    member.DisplayInfo();
                     break;
                 }
                 ++index;
@@ -90,7 +90,7 @@ namespace Buoi1 // Note: actual namespace depends on the project name.
                             {
                                 if (member.DOB.Year == 2000)
                                 {
-                                    member.Display();
+                                    member.DisplayInfo();
                                 }
                             }
                             break;
@@ -103,7 +103,7 @@ namespace Buoi1 // Note: actual namespace depends on the project name.
                             {
                                 if (member.DOB.Year > 2000)
                                 {
-                                    member.Display();
+                                    member.DisplayInfo();
                                 }
                             }
                             break;
@@ -116,7 +116,7 @@ namespace Buoi1 // Note: actual namespace depends on the project name.
                             {
                                 if (member.DOB.Year < 2000)
                                 {
-                                    member.Display();
+                                    member.DisplayInfo();
                                 }
                             }
                             break;

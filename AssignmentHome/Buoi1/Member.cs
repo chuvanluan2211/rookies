@@ -29,12 +29,12 @@ namespace Buoi1
             Age = (uint)(DateTime.Now.Year - DOB.Year);
             IsGraduated = isGraduated;
         }
-        public void FullName()
+        public void ShowFullName()
         {
             System.Console.WriteLine($"Full name of member: {FirstName} {LastName}");
         }
 
-        public void Display()
+        public void DisplayInfo()
         {
             string graduated = (IsGraduated) ? "Yes" : "No";
 

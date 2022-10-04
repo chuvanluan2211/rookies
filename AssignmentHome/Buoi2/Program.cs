@@ -21,7 +21,7 @@ internal class Program
 
         foreach (Member member in maleList)
         {
-            member.Display();
+            member.DisplayInfo();
         }
 
         System.Console.WriteLine("----------------");
@@ -31,7 +31,7 @@ internal class Program
 
         foreach (Member member in oldList)
         {
-            member.Display();
+            member.DisplayInfo();
             break;
         }
 
@@ -43,7 +43,7 @@ internal class Program
 
         foreach (Member member in fullNameList)
         {
-            member.FullName();
+            member.ShowFullName();
         }
 
         System.Console.WriteLine("----------------");
@@ -54,7 +54,7 @@ internal class Program
 
         foreach (Member member in haNoiList)
         {
-            member.Display();
+            member.DisplayInfo();
             break;
         }
 
@@ -81,7 +81,7 @@ internal class Program
 
                         foreach (Member member in bornList)
                         {
-                            member.Display();
+                            member.DisplayInfo();
                         }
                         break;
                     };
@@ -93,7 +93,7 @@ internal class Program
 
                         foreach (Member member in bornList)
                         {
-                            member.Display();
+                            member.DisplayInfo();
                         }
                         break;
                     };
@@ -105,7 +105,7 @@ internal class Program
 
                         foreach (Member member in bornList)
                         {
-                            member.Display();
+                            member.DisplayInfo();
                         }
                         break;
                     };
