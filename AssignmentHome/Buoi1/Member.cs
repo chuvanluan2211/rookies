@@ -14,7 +14,13 @@ namespace Buoi1
         public string Phone { get; set; }
         public string BirthPlace { get; set; }
 
-        public uint Age { get; set; }
+        public uint Age
+        {
+            get
+            {
+                return ((uint)(DateTime.Now.Year - DOB.Year));
+            }
+        }
         public bool IsGraduated { get; set; }
 
         public Member(string firstName, string lastName, string gender, DateTime dob, string phone,
@@ -26,7 +32,6 @@ namespace Buoi1
             DOB = dob;
             Phone = phone;
             BirthPlace = birthPlace;
-            Age = (uint)(DateTime.Now.Year - DOB.Year);
             IsGraduated = isGraduated;
         }
         public void ShowFullName()

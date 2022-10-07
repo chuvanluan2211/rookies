@@ -1,0 +1,1 @@
+Schemahttps	Hostlocalhost:7136	Path/	Stringquery	RequestBodyMicrosoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream

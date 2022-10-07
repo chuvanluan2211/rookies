@@ -1,7 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Buoi2;
 
@@ -14,7 +11,13 @@ public class Member
     public string Phone { get; set; }
     public string BirthPlace { get; set; }
 
-    public uint Age { get; set; }
+     public uint Age
+        {
+            get
+            {
+                return ((uint)(DateTime.Now.Year - DOB.Year));
+            }
+        }
     public bool IsGraduated { get; set; }
 
     public Member(string firstName, string lastName, string gender, DateTime dob, string phone,
@@ -26,9 +29,9 @@ public class Member
         DOB = dob;
         Phone = phone;
         BirthPlace = birthPlace;
-        Age = (uint)(DateTime.Now.Year - DOB.Year);
         IsGraduated = isGraduated;
     }
+    
     public void ShowFullName()
     {
         System.Console.WriteLine($"Full name of member: {FirstName} {LastName}");
