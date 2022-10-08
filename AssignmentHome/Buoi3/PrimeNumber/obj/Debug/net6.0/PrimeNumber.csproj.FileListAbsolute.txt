@@ -1,0 +1,15 @@
+E:\Desktop\rookies\AssignmentHome\Buoi3\PrimeNumber\obj\Debug\net6.0\PrimeNumber.csproj.AssemblyReference.cache
+E:\Desktop\rookies\AssignmentHome\Buoi3\PrimeNumber\obj\Debug\net6.0\PrimeNumber.GeneratedMSBuildEditorConfig.editorconfig
+E:\Desktop\rookies\AssignmentHome\Buoi3\PrimeNumber\obj\Debug\net6.0\PrimeNumber.AssemblyInfoInputs.cache
+E:\Desktop\rookies\AssignmentHome\Buoi3\PrimeNumber\obj\Debug\net6.0\PrimeNumber.AssemblyInfo.cs
+E:\Desktop\rookies\AssignmentHome\Buoi3\PrimeNumber\obj\Debug\net6.0\PrimeNumber.csproj.CoreCompileInputs.cache
+E:\Desktop\rookies\AssignmentHome\Buoi3\PrimeNumber\bin\Debug\net6.0\PrimeNumber.exe
+E:\Desktop\rookies\AssignmentHome\Buoi3\PrimeNumber\bin\Debug\net6.0\PrimeNumber.deps.json
+E:\Desktop\rookies\AssignmentHome\Buoi3\PrimeNumber\bin\Debug\net6.0\PrimeNumber.runtimeconfig.json
+E:\Desktop\rookies\AssignmentHome\Buoi3\PrimeNumber\bin\Debug\net6.0\PrimeNumber.dll
+E:\Desktop\rookies\AssignmentHome\Buoi3\PrimeNumber\bin\Debug\net6.0\PrimeNumber.pdb
+E:\Desktop\rookies\AssignmentHome\Buoi3\PrimeNumber\obj\Debug\net6.0\PrimeNumber.dll
+E:\Desktop\rookies\AssignmentHome\Buoi3\PrimeNumber\obj\Debug\net6.0\refint\PrimeNumber.dll
+E:\Desktop\rookies\AssignmentHome\Buoi3\PrimeNumber\obj\Debug\net6.0\PrimeNumber.pdb
+E:\Desktop\rookies\AssignmentHome\Buoi3\PrimeNumber\obj\Debug\net6.0\PrimeNumber.genruntimeconfig.cache
+E:\Desktop\rookies\AssignmentHome\Buoi3\PrimeNumber\obj\Debug\net6.0\ref\PrimeNumber.dll
