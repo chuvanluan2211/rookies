@@ -31,11 +31,11 @@
                     <td>@person.DOB?.ToString("dd/MM/yyyy")</td>
                     <td>@person.BirthDay</td>
                     <td>
-                        <a class="btn btn-secondary btn-sm" asp-action="Edit" asp-controller="Rookies"
+                        <a class="btn btn-secondary btn-sm" role="button" asp-action="Edit" asp-controller="Rookies"
                         asp-route-index="@i">Edit</a>
-                        <a class="btn btn-primary btn-sm" href="#" role="button" >Delete</a>
+                        <a class="btn btn-primary btn-sm" href="#" role="button" data-toggle="modal" data-target="#exampleModal_@i" >Delete</a>
                         <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    <div class="modal fade" id="exampleModal-@i" tabindex="-1" role="dialog"
                         aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
