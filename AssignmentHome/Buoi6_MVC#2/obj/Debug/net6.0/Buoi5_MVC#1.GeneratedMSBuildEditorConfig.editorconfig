@@ -6,55 +6,55 @@ build_property.ProjectTypeGuids =
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = Buoi5_MVC_1
-build_property.RootNamespace = Buoi5_MVC_1
-build_property.ProjectDir = e:\Desktop\rookies\AssignmentHome\Buoi5_MVC#1\
+build_property.RootNamespace = Buoi5_MVC_2
+build_property.RootNamespace = Buoi5_MVC_2
+build_property.ProjectDir = e:\Desktop\rookies\AssignmentHome\Buoi6_MVC#2\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = e:\Desktop\rookies\AssignmentHome\Buoi5_MVC#1
+build_property.MSBuildProjectDirectory = e:\Desktop\rookies\AssignmentHome\Buoi6_MVC#2
 build_property._RazorSourceGeneratorDebug = 
 
-[e:/Desktop/rookies/AssignmentHome/Buoi5_MVC\#1/Views/Rookies/Age.cshtml]
+[e:/Desktop/rookies/AssignmentHome/Buoi6_MVC\#2/Views/Rookies/Age.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9va2llc1xBZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Desktop/rookies/AssignmentHome/Buoi5_MVC\#1/Views/Rookies/FullName.cshtml]
+[e:/Desktop/rookies/AssignmentHome/Buoi6_MVC\#2/Views/Rookies/FullName.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9va2llc1xGdWxsTmFtZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Desktop/rookies/AssignmentHome/Buoi5_MVC\#1/Views/Rookies/Index.cshtml]
+[e:/Desktop/rookies/AssignmentHome/Buoi6_MVC\#2/Views/Rookies/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9va2llc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Desktop/rookies/AssignmentHome/Buoi5_MVC\#1/Views/Rookies/Male.cshtml]
+[e:/Desktop/rookies/AssignmentHome/Buoi6_MVC\#2/Views/Rookies/Male.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9va2llc1xNYWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Desktop/rookies/AssignmentHome/Buoi5_MVC\#1/Views/Rookies/Person.cshtml]
+[e:/Desktop/rookies/AssignmentHome/Buoi6_MVC\#2/Views/Rookies/Person.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9va2llc1xQZXJzb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Desktop/rookies/AssignmentHome/Buoi5_MVC\#1/Views/Rookies/Year.cshtml]
+[e:/Desktop/rookies/AssignmentHome/Buoi6_MVC\#2/Views/Rookies/Year.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9va2llc1xZZWFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Desktop/rookies/AssignmentHome/Buoi5_MVC\#1/Views/Shared/Error.cshtml]
+[e:/Desktop/rookies/AssignmentHome/Buoi6_MVC\#2/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Desktop/rookies/AssignmentHome/Buoi5_MVC\#1/Views/Shared/_ValidationScriptsPartial.cshtml]
+[e:/Desktop/rookies/AssignmentHome/Buoi6_MVC\#2/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Desktop/rookies/AssignmentHome/Buoi5_MVC\#1/Views/_ViewImports.cshtml]
+[e:/Desktop/rookies/AssignmentHome/Buoi6_MVC\#2/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Desktop/rookies/AssignmentHome/Buoi5_MVC\#1/Views/_ViewStart.cshtml]
+[e:/Desktop/rookies/AssignmentHome/Buoi6_MVC\#2/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Desktop/rookies/AssignmentHome/Buoi5_MVC\#1/Views/Shared/_Layout.cshtml]
+[e:/Desktop/rookies/AssignmentHome/Buoi6_MVC\#2/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-tdcwnxbr3v

@@ -1,0 +1,68 @@
+﻿@model List<PersonModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1>Members List</h1>
+    <div class="text-left mt-5 mb-3">
+        <a class="btn btn-secondary" role="button" asp-action="Create" asp-controller="Rookies">Add new person</a>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col" class="text-left">FullName</th>
+                <th scope="col">Gender</th>
+                <th scope="col">DOB</th>
+                <th scope="col">BirthDay</th>
+                <th scope="col">Action</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.Count; i++)
+            {
+                var person = Model[i];
+                <tr>
+                    <th scope="row">@(i +1)</th>
+                    <td class="text-left">@person.FullName</td>
+                    <td>@person.Gender</td>
+                    <td>@person.DOB?.ToString("dd/MM/yyyy")</td>
+                    <td>@person.BirthDay</td>
+                    <td>
+                        <a class="btn btn-secondary btn-sm" asp-action="Edit" asp-controller="Rookies"
+                        asp-route-index="@i">Edit</a>
+                        <a class="btn btn-primary btn-sm" href="#" role="button" >Delete</a>
+                        <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <form asp-action="Delete" asp-controller="Rookies" asp-route-index = "@i" method="post">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Do you want to delete?
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Confirm</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

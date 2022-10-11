@@ -1,5 +1,5 @@
 {
-  "FilePath": "e:\\Desktop\\rookies\\AssignmentHome\\Buoi5_MVC#1\\Buoi5_MVC#1.csproj",
+  "FilePath": "e:\\Desktop\\rookies\\AssignmentHome\\Buoi6_MVC#2\\Buoi6_MVC#2.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -16295,61 +16295,46 @@
     ],
     "CSharpLanguageVersion": 1000
   },
-  "RootNamespace": "Buoi5_MVC_1",
+  "RootNamespace": "Buoi6_MVC_2",
   "Documents": [
     {
-      "FilePath": "e:\\Desktop\\rookies\\AssignmentHome\\Buoi5_MVC#1\\Views\\Rookies\\Male.cshtml",
-      "TargetPath": "Views\\Rookies\\Male.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\Desktop\\rookies\\AssignmentHome\\Buoi5_MVC#1\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\Desktop\\rookies\\AssignmentHome\\Buoi5_MVC#1\\Views\\Rookies\\Age.cshtml",
-      "TargetPath": "Views\\Rookies\\Age.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\Desktop\\rookies\\AssignmentHome\\Buoi5_MVC#1\\Views\\Rookies\\Person.cshtml",
-      "TargetPath": "Views\\Rookies\\Person.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\Desktop\\rookies\\AssignmentHome\\Buoi5_MVC#1\\Views\\_ViewStart.cshtml",
+      "FilePath": "e:\\Desktop\\rookies\\AssignmentHome\\Buoi6_MVC#2\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "e:\\Desktop\\rookies\\AssignmentHome\\Buoi5_MVC#1\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\Desktop\\rookies\\AssignmentHome\\Buoi5_MVC#1\\Views\\Rookies\\Year.cshtml",
-      "TargetPath": "Views\\Rookies\\Year.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\Desktop\\rookies\\AssignmentHome\\Buoi5_MVC#1\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\Desktop\\rookies\\AssignmentHome\\Buoi5_MVC#1\\Views\\_ViewImports.cshtml",
+      "FilePath": "e:\\Desktop\\rookies\\AssignmentHome\\Buoi6_MVC#2\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "e:\\Desktop\\rookies\\AssignmentHome\\Buoi5_MVC#1\\Views\\Rookies\\FullName.cshtml",
-      "TargetPath": "Views\\Rookies\\FullName.cshtml",
+      "FilePath": "e:\\Desktop\\rookies\\AssignmentHome\\Buoi6_MVC#2\\Views\\Rookies\\Create.cshtml",
+      "TargetPath": "Views\\Rookies\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "e:\\Desktop\\rookies\\AssignmentHome\\Buoi5_MVC#1\\Views\\Rookies\\Index.cshtml",
+      "FilePath": "e:\\Desktop\\rookies\\AssignmentHome\\Buoi6_MVC#2\\Views\\Rookies\\Index.cshtml",
       "TargetPath": "Views\\Rookies\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Desktop\\rookies\\AssignmentHome\\Buoi6_MVC#2\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Desktop\\rookies\\AssignmentHome\\Buoi6_MVC#2\\Views\\Rookies\\Edit.cshtml",
+      "TargetPath": "Views\\Rookies\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Desktop\\rookies\\AssignmentHome\\Buoi6_MVC#2\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Desktop\\rookies\\AssignmentHome\\Buoi6_MVC#2\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     }
   ],
