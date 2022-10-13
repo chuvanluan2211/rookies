@@ -8,41 +8,41 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Buoi6_MVC_2
 build_property.RootNamespace = Buoi6_MVC_2
-build_property.ProjectDir = E:\Desktop\rookies\AssignmentHome\Buoi6_MVC#2\
+build_property.ProjectDir = e:\Desktop\rookies\AssignmentHome\Buoi6_MVC#2\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\Desktop\rookies\AssignmentHome\Buoi6_MVC#2
+build_property.MSBuildProjectDirectory = e:\Desktop\rookies\AssignmentHome\Buoi6_MVC#2
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/Desktop/rookies/AssignmentHome/Buoi6_MVC\#2/Views/Rookies/Create.cshtml]
+[e:/Desktop/rookies/AssignmentHome/Buoi6_MVC\#2/Views/Rookies/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9va2llc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Desktop/rookies/AssignmentHome/Buoi6_MVC\#2/Views/Rookies/Edit.cshtml]
+[e:/Desktop/rookies/AssignmentHome/Buoi6_MVC\#2/Views/Rookies/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9va2llc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Desktop/rookies/AssignmentHome/Buoi6_MVC\#2/Views/Rookies/Index.cshtml]
+[e:/Desktop/rookies/AssignmentHome/Buoi6_MVC\#2/Views/Rookies/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9va2llc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Desktop/rookies/AssignmentHome/Buoi6_MVC\#2/Views/Shared/Error.cshtml]
+[e:/Desktop/rookies/AssignmentHome/Buoi6_MVC\#2/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Desktop/rookies/AssignmentHome/Buoi6_MVC\#2/Views/Shared/_ValidationScriptsPartial.cshtml]
+[e:/Desktop/rookies/AssignmentHome/Buoi6_MVC\#2/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Desktop/rookies/AssignmentHome/Buoi6_MVC\#2/Views/_ViewImports.cshtml]
+[e:/Desktop/rookies/AssignmentHome/Buoi6_MVC\#2/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Desktop/rookies/AssignmentHome/Buoi6_MVC\#2/Views/_ViewStart.cshtml]
+[e:/Desktop/rookies/AssignmentHome/Buoi6_MVC\#2/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Desktop/rookies/AssignmentHome/Buoi6_MVC\#2/Views/Shared/_Layout.cshtml]
+[e:/Desktop/rookies/AssignmentHome/Buoi6_MVC\#2/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-u8ta7mclgg
