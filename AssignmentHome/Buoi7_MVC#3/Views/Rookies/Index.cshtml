@@ -1,6 +1,8 @@
 ﻿@model List<PersonModel>
 @{
     ViewData["Title"] = "Home Page";
+          var value = ViewData["Index"]?.ToString() ?? "";
+    var index = !string.IsNullOrEmpty(value) ? int.Parse(value) : 0 ;
 }
 
 <div class="text-center">
@@ -35,8 +37,7 @@
                     <td>
                         <a class="btn btn-secondary btn-sm" role="button" asp-action="Edit" asp-controller="Rookies"
                         asp-route-index="@i">Edit</a>
-                        <a class="btn btn-primary btn-sm" href="#" role="button" data-toggle="modal"
-                        data-target="#exampleModal_@i">Delete</a>
+                        <a class="btn btn-primary btn-sm" onclick="return ConfirmDelete()" asp-action="delete" asp-controller="Rookies" asp-route-index="@index">Delete</a>
                     </td>
 
 
@@ -48,26 +49,11 @@
     </table>
 </div>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <form asp-action="Delete" asp-controller="Rookies" asp-route-id="" method="post">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                Do you want to delete?
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Confirm</button>
-            </div>
-            </form>
-        </div>
-    </div>
-    </div>
+<script type="text/javascript">
+    function ConfirmDelete() {
+        if (confirm("Do you want delete this person?")) {
+            return true;
+        }
+        return false;
+    }
+</script>

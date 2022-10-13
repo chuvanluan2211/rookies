@@ -122,6 +122,8 @@ public class RookiesController : Controller
     public IActionResult Delete(int index)
     {
         var person = _personService.Delete(index);
+        ViewData["Index"] = index;
+
         if (person == null)
         {
             return NotFound();
@@ -133,12 +135,21 @@ public class RookiesController : Controller
     public IActionResult DeleteAndRedirectToView(int index)
     {
         var person = _personService.Delete(index);
+
         if (person == null)
         {
             return NotFound();
         }
 
-        return View("DeleteResult");
+        HttpContext.Session.SetString("DeleteName" , person.FullName);
+
+
+        return RedirectToAction("DeleteResult");
+    }
+
+    public IActionResult DeleteResult()
+    {
+        return View();
     }
 
 
