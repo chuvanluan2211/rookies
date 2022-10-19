@@ -1,5 +1,5 @@
 {
-  "FilePath": "e:\\Desktop\\rookies\\AssignmentHome\\Buoi4\\AssMiddleware\\AssMiddleware.csproj",
+  "FilePath": "e:\\Desktop\\rookies\\AssignmentHome\\Buoi10_EF#1\\Buoi10_EF#1.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -16295,7 +16295,7 @@
     ],
     "CSharpLanguageVersion": 1000
   },
-  "RootNamespace": "AssMiddleware",
+  "RootNamespace": "Buoi10_EF_1",
   "Documents": [],
   "SerializationFormat": "0.2"
 }
