@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Desktop\\rookies\\AssignmentHome\\Buoi10_EF#1\\Buoi10_EF#1.csproj": {}
+    "e:\\Desktop\\rookies\\AssignmentHome\\Buoi10_EF#1\\Buoi10_EF#1.csproj": {}
   },
   "projects": {
-    "E:\\Desktop\\rookies\\AssignmentHome\\Buoi10_EF#1\\Buoi10_EF#1.csproj": {
+    "e:\\Desktop\\rookies\\AssignmentHome\\Buoi10_EF#1\\Buoi10_EF#1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Desktop\\rookies\\AssignmentHome\\Buoi10_EF#1\\Buoi10_EF#1.csproj",
+        "projectUniqueName": "e:\\Desktop\\rookies\\AssignmentHome\\Buoi10_EF#1\\Buoi10_EF#1.csproj",
         "projectName": "Buoi10_EF#1",
-        "projectPath": "E:\\Desktop\\rookies\\AssignmentHome\\Buoi10_EF#1\\Buoi10_EF#1.csproj",
+        "projectPath": "e:\\Desktop\\rookies\\AssignmentHome\\Buoi10_EF#1\\Buoi10_EF#1.csproj",
         "packagesPath": "C:\\Users\\laptop 2019\\.nuget\\packages\\",
-        "outputPath": "E:\\Desktop\\rookies\\AssignmentHome\\Buoi10_EF#1\\obj\\",
+        "outputPath": "e:\\Desktop\\rookies\\AssignmentHome\\Buoi10_EF#1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\laptop 2019\\AppData\\Roaming\\NuGet\\NuGet.Config",
