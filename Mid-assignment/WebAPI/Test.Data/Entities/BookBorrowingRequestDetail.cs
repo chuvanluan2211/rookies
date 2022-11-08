@@ -10,13 +10,18 @@ namespace Test.Data.Entities
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int RequestDetailId { get; set; }
 
-        public ICollection<Book> Books { get; set; }
-
         [ForeignKey("BookBorrowingRequest")] 
         public int BookRequestId { get; set; }
 
         [ForeignKey("Book")]
         public int BookId { get; set; }
+
+        public Book Book { get; set; }
+
+        public BookBorrowingRequest BookBorrowingRequest { get; set; }
+        //public ICollection<Book> Books { get; set; }
+
+        //public ICollection<BookBorrowingRequest> BookBorrowingRequests { get; set; }
 
     }
 }

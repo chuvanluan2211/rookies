@@ -87,52 +87,34 @@ namespace Test.Data.Migrations
                     RequestDetailId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     BookRequestId = table.Column<int>(type: "int", nullable: false),
-                    BookId = table.Column<int>(type: "int", nullable: false),
-                    BookBorrowingRequestBookRequestId = table.Column<int>(type: "int", nullable: true)
+                    BookId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_BookBorrowingRequestDetails", x => x.RequestDetailId);
                     table.ForeignKey(
-                        name: "FK_BookBorrowingRequestDetails_BookBorrowingRequests_BookBorrowingRequestBookRequestId",
-                        column: x => x.BookBorrowingRequestBookRequestId,
+                        name: "FK_BookBorrowingRequestDetails_BookBorrowingRequests_BookRequestId",
+                        column: x => x.BookRequestId,
                         principalTable: "BookBorrowingRequests",
-                        principalColumn: "BookRequestId");
-                });
-
-            migrationBuilder.CreateTable(
-                name: "BookBookBorrowingRequestDetail",
-                columns: table => new
-                {
-                    BooksBookId = table.Column<int>(type: "int", nullable: false),
-                    BorrowingRequestDetailsRequestDetailId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_BookBookBorrowingRequestDetail", x => new { x.BooksBookId, x.BorrowingRequestDetailsRequestDetailId });
-                    table.ForeignKey(
-                        name: "FK_BookBookBorrowingRequestDetail_BookBorrowingRequestDetails_BorrowingRequestDetailsRequestDetailId",
-                        column: x => x.BorrowingRequestDetailsRequestDetailId,
-                        principalTable: "BookBorrowingRequestDetails",
-                        principalColumn: "RequestDetailId",
+                        principalColumn: "BookRequestId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_BookBookBorrowingRequestDetail_Books_BooksBookId",
-                        column: x => x.BooksBookId,
+                        name: "FK_BookBorrowingRequestDetails_Books_BookId",
+                        column: x => x.BookId,
                         principalTable: "Books",
                         principalColumn: "BookId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_BookBookBorrowingRequestDetail_BorrowingRequestDetailsRequestDetailId",
-                table: "BookBookBorrowingRequestDetail",
-                column: "BorrowingRequestDetailsRequestDetailId");
+                name: "IX_BookBorrowingRequestDetails_BookId",
+                table: "BookBorrowingRequestDetails",
+                column: "BookId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_BookBorrowingRequestDetails_BookBorrowingRequestBookRequestId",
+                name: "IX_BookBorrowingRequestDetails_BookRequestId",
                 table: "BookBorrowingRequestDetails",
-                column: "BookBorrowingRequestBookRequestId");
+                column: "BookRequestId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_BookBorrowingRequests_UserId",
@@ -148,22 +130,19 @@ namespace Test.Data.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "BookBookBorrowingRequestDetail");
-
-            migrationBuilder.DropTable(
                 name: "BookBorrowingRequestDetails");
-
-            migrationBuilder.DropTable(
-                name: "Books");
 
             migrationBuilder.DropTable(
                 name: "BookBorrowingRequests");
 
             migrationBuilder.DropTable(
-                name: "Categories");
+                name: "Books");
 
             migrationBuilder.DropTable(
                 name: "Users");
+
+            migrationBuilder.DropTable(
+                name: "Categories");
         }
     }
 }

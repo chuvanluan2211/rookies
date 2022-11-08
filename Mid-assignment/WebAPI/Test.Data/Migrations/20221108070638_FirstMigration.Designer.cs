@@ -12,7 +12,7 @@ using Test.Data;
 namespace Test.Data.Migrations
 {
     [DbContext(typeof(BookContext))]
-    [Migration("20221107165935_FirstMigration")]
+    [Migration("20221108070638_FirstMigration")]
     partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -23,21 +23,6 @@ namespace Test.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
-
-            modelBuilder.Entity("BookBookBorrowingRequestDetail", b =>
-                {
-                    b.Property<int>("BooksBookId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("BorrowingRequestDetailsRequestDetailId")
-                        .HasColumnType("int");
-
-                    b.HasKey("BooksBookId", "BorrowingRequestDetailsRequestDetailId");
-
-                    b.HasIndex("BorrowingRequestDetailsRequestDetailId");
-
-                    b.ToTable("BookBookBorrowingRequestDetail");
-                });
 
             modelBuilder.Entity("Test.Data.Entities.Book", b =>
                 {
@@ -106,9 +91,6 @@ namespace Test.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RequestDetailId"), 1L, 1);
 
-                    b.Property<int?>("BookBorrowingRequestBookRequestId")
-                        .HasColumnType("int");
-
                     b.Property<int>("BookId")
                         .HasColumnType("int");
 
@@ -117,7 +99,9 @@ namespace Test.Data.Migrations
 
                     b.HasKey("RequestDetailId");
 
-                    b.HasIndex("BookBorrowingRequestBookRequestId");
+                    b.HasIndex("BookId");
+
+                    b.HasIndex("BookRequestId");
 
                     b.ToTable("BookBorrowingRequestDetails");
                 });
@@ -159,21 +143,6 @@ namespace Test.Data.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("BookBookBorrowingRequestDetail", b =>
-                {
-                    b.HasOne("Test.Data.Entities.Book", null)
-                        .WithMany()
-                        .HasForeignKey("BooksBookId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Test.Data.Entities.BookBorrowingRequestDetail", null)
-                        .WithMany()
-                        .HasForeignKey("BorrowingRequestDetailsRequestDetailId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("Test.Data.Entities.Book", b =>
                 {
                     b.HasOne("Test.Data.Entities.Category", "Category")
@@ -198,9 +167,26 @@ namespace Test.Data.Migrations
 
             modelBuilder.Entity("Test.Data.Entities.BookBorrowingRequestDetail", b =>
                 {
-                    b.HasOne("Test.Data.Entities.BookBorrowingRequest", null)
+                    b.HasOne("Test.Data.Entities.Book", "Book")
                         .WithMany("BorrowingRequestDetails")
-                        .HasForeignKey("BookBorrowingRequestBookRequestId");
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Test.Data.Entities.BookBorrowingRequest", "BookBorrowingRequest")
+                        .WithMany("BorrowingRequestDetails")
+                        .HasForeignKey("BookRequestId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Book");
+
+                    b.Navigation("BookBorrowingRequest");
+                });
+
+            modelBuilder.Entity("Test.Data.Entities.Book", b =>
+                {
+                    b.Navigation("BorrowingRequestDetails");
                 });
 
             modelBuilder.Entity("Test.Data.Entities.BookBorrowingRequest", b =>
