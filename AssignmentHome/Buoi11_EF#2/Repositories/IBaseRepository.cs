@@ -10,7 +10,7 @@ namespace Buoi11_EF_2.Repositories
     {
         IEnumerable<T> GetAll(Expression<Func<T, bool>> predicate);
 
-        T? GetById(Expression<Func<T, bool>> predicate);
+        T GetById(Expression<Func<T, bool>> predicate);
 
         T Create(T model);
 

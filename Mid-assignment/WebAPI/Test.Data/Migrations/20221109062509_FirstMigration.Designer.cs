@@ -12,7 +12,7 @@ using Test.Data;
 namespace Test.Data.Migrations
 {
     [DbContext(typeof(BookContext))]
-    [Migration("20221108070638_FirstMigration")]
+    [Migration("20221109062509_FirstMigration")]
     partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -135,8 +135,16 @@ namespace Test.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("Role")
                         .HasColumnType("int");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("UserId");
 
