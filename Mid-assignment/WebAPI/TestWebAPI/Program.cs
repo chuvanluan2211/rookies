@@ -29,6 +29,8 @@ builder.Services.AddTransient<ICategoryService, CategoryService>();
 builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
 builder.Services.AddTransient<IBookService, BookService>();
 builder.Services.AddTransient<IBookRepository, BookRepository>();
+builder.Services.AddTransient<IBookBorrowingRequestRepository, BookBorrowingRequestRepository>();
+builder.Services.AddTransient<IBookBorrowingRequestService, BookBorrowingRequestService>();
 
 var app = builder.Build();
 

@@ -11,7 +11,6 @@ namespace TestWebAPI.Services.Implements
 
         private readonly ICategoryRepository _category;
 
-
         public BookService(IBookRepository book, ICategoryRepository category)
         {
             _book = book;

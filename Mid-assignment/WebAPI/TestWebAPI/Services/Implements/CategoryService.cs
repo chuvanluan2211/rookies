@@ -9,7 +9,6 @@ namespace TestWebAPI.Services.Implements
     {
         private readonly ICategoryRepository _category;
 
-
         public CategoryService( ICategoryRepository category)
         {
             _category = category;
