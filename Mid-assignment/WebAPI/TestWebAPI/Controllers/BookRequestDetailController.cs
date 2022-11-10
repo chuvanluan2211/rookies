@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Test.Data.DTOs.NormalUsers;
 using Test.Data.DTOs.SuperUsers;
 using Test.Data.Entities;
 using TestWebAPI.Services.Interfaces;
@@ -24,5 +25,13 @@ namespace TestWebAPI.Controllers
         {
             return _detailService.GetAll(id);
         }
-    }
+
+        [HttpPost("create-request-detail")]
+        public CreateBookDetailResponse? CreateBookDetail(CreateBookDetailRequest model)
+        {
+            return _detailService.CreateBookDetail(model);
+        }
+    }    
 }
+
+

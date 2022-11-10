@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Test.Data.DTOs.NormalUsers
 {
-    public class CreateARequestRequest
+    public class CreateBookDetailRequest
     {
-        public DateTime DateOfRequest { get; set; }
+        public int BookRequestId { get; set; }
 
+        public int BookId { get; set; }
     }
 }

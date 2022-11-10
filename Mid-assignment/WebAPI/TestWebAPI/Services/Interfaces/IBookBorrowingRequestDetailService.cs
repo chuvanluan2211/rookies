@@ -7,7 +7,8 @@ namespace TestWebAPI.Services.Interfaces
     {
         IEnumerable<BookBorrowingRequestDetail> GetAll(int id);
 
-        
+        CreateBookDetailResponse? CreateBookDetail(CreateBookDetailRequest model );
+
 
     }
 }
