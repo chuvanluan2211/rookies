@@ -10,7 +10,7 @@ namespace Test.Data.DTOs.Books
     {
         public int BookId { get; set; }
 
-        public string BookName { get; set; }
+        public string? BookName { get; set; }
 
         public string Description { get; set; }
 

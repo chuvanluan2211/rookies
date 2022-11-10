@@ -1,4 +1,5 @@
-﻿using Test.Data.DTOs.SuperUsers;
+﻿using Test.Data.DTOs.NormalUsers;
+using Test.Data.DTOs.SuperUsers;
 using Test.Data.Entities;
 
 namespace TestWebAPI.Services.Interfaces
@@ -9,5 +10,7 @@ namespace TestWebAPI.Services.Interfaces
         UpdateStatusResponse? UpdateStatus(UpdateStatusRequest model, int id);
 
         IEnumerable<BookBorrowingRequest> GetAll();
+
+        BookBorrowingRequest? CreateARequest( string name, int id);
     }
 }

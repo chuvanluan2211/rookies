@@ -34,7 +34,6 @@ namespace TestWebAPI.Services.Implements
                             CategoryId = newCate.CategoryId,
                             CategoryName = newCate.CategoryName,
                         };
-                    return null;
                 }
                 catch
                 {
@@ -73,7 +72,7 @@ namespace TestWebAPI.Services.Implements
             return _category.GetAll(s => true);
         }
 
-        public UpdateCateResponse? UpdateCate(UpdateCateRequest model , int id)
+        public BookDetailResponse? UpdateCate(UpdateCateRequest model , int id)
         {
             using (var transaction = _category.DatabaseTransaction())
             {
@@ -90,7 +89,7 @@ namespace TestWebAPI.Services.Implements
                         _category.SaveChanges();
                         transaction.Commit();
 
-                        return new UpdateCateResponse
+                        return new BookDetailResponse
                         {
                             CategoryId = updateBook.CategoryId,
                             CategoryName = updateBook.CategoryName,

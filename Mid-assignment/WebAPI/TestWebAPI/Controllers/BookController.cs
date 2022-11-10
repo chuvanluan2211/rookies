@@ -25,7 +25,7 @@ namespace TestWebAPI.Controllers
             return _bookService.CreateBook(model);
         }
 
-        [HttpGet("get-allbook")]
+        [HttpGet("get-all-book")]
         public IEnumerable<Book> GetAll()
         {
             return _bookService.GetAll();

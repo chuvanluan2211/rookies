@@ -2,6 +2,7 @@
 using TestWebAPI.Services.Interfaces;
 using TestWebAPI.Repositories.Interfaces;
 using Test.Data.Entities;
+using Test.Data.DTOs.NormalUsers;
 
 namespace TestWebAPI.Services.Implements
 {
@@ -17,6 +18,36 @@ namespace TestWebAPI.Services.Implements
         public IEnumerable<BookBorrowingRequest> GetAll()
         {
             return _status.GetAll(s => true);
+        }
+
+        public BookBorrowingRequest? CreateARequest( string name, int id)
+        {
+            using (var transaction = _status.DatabaseTransaction())
+            {
+                try
+                {
+                    var request = new BookBorrowingRequest
+                    {
+                        AcceptUser = "",
+                        Status = "W",
+                        RequestUser = name,
+                        DateOfRequest = DateTime.Now.Date,
+                        UserId = id
+                    };
+
+                    var newRequest = _status.Create(request);
+
+                    _status.SaveChanges();
+                    transaction.Commit();
+
+                    return newRequest;
+                }
+                catch
+                {
+                    transaction.RollBack();
+                    return null;
+                }
+            }
         }
 
         public UpdateStatusResponse? UpdateStatus(UpdateStatusRequest model, int id)

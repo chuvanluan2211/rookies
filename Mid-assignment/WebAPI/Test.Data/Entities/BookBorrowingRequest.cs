@@ -14,7 +14,7 @@ namespace Test.Data.Entities
         public string RequestUser { get; set; }
         public DateTime DateOfRequest { get; set; }
 
-        public string AcceptUser { get; set; }
+        public string? AcceptUser { get; set; }
 
         [ForeignKey("User")]
         public int UserId { get; set; }

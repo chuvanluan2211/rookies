@@ -25,14 +25,14 @@ namespace TestWebAPI.Controllers
             return _cateService.CreateCate(model);
         }
 
-        [HttpGet("get-allcate")]
+        [HttpGet("get-all-category")]
         public IEnumerable<Category> GetAll()
         {
             return _cateService.GetAll();
         }
 
         [HttpPut("update-category")]
-        public UpdateCateResponse? UpdateCategory(UpdateCateRequest model , int id)
+        public BookDetailResponse? UpdateCategory(UpdateCateRequest model , int id)
         {
             return _cateService.UpdateCate(model , id);
         }

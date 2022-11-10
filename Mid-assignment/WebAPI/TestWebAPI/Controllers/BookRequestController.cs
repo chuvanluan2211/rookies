@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Test.Data.DTOs.NormalUsers;
 using Test.Data.DTOs.SuperUsers;
 using Test.Data.Entities;
 using TestWebAPI.Services.Interfaces;
@@ -19,17 +20,22 @@ namespace TestWebAPI.Controllers
             _statusService = statusService;
         }
 
-        [HttpGet("get-allcate")]
+        [HttpGet("get-all-request")]
         public IEnumerable<BookBorrowingRequest> GetAll()
         {
             return _statusService.GetAll();
         }
 
-        [HttpPut("update-category")]
-        public UpdateStatusResponse? UpdateCategory(UpdateStatusRequest model , int id)
+        [HttpPut("update-status")]
+        public UpdateStatusResponse? UpdateStatus(UpdateStatusRequest model , int id)
         {
             return _statusService.UpdateStatus(model , id);
         }
 
+        [HttpPost("create-request")]
+        public BookBorrowingRequest? CreateARequest( string name, int id)
+        {
+            return _statusService.CreateARequest(name, id);
+        }
     }
 }

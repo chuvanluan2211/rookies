@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Test.Data.DTOs.Categories
 {
-    public class UpdateCateResponse
+    public class BookDetailResponse
     {
         public int CategoryId { get; set; }
 

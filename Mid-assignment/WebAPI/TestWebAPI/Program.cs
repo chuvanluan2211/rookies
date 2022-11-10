@@ -31,6 +31,8 @@ builder.Services.AddTransient<IBookService, BookService>();
 builder.Services.AddTransient<IBookRepository, BookRepository>();
 builder.Services.AddTransient<IBookBorrowingRequestRepository, BookBorrowingRequestRepository>();
 builder.Services.AddTransient<IBookBorrowingRequestService, BookBorrowingRequestService>();
+builder.Services.AddTransient<IBookBorrowingRequestDetailRepository, BookBorrowingRequestDetailRepository>();
+builder.Services.AddTransient<IBookBorrowingRequestDetailService, BookBorrowingRequestDetailService>();
 
 var app = builder.Build();
 

@@ -7,7 +7,7 @@ namespace TestWebAPI.Services.Interfaces
     {
         CreateCateResponse? CreateCate(CreateCateRequest model);
 
-        UpdateCateResponse? UpdateCate(UpdateCateRequest model , int id);
+        BookDetailResponse? UpdateCate(UpdateCateRequest model , int id);
 
         bool DeleteCate(DeleteCate model, int id);
 
