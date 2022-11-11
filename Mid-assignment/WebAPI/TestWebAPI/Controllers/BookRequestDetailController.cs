@@ -20,12 +20,6 @@ namespace TestWebAPI.Controllers
             _detailService = detailService;
         }
 
-        [HttpGet("get-all-request-detail")]
-        public IEnumerable<BookBorrowingRequestDetail> GetAll(int id)
-        {
-            return _detailService.GetAll(id);
-        }
-
         [HttpPost("create-request-detail")]
         public CreateBookDetailResponse? CreateBookDetail(CreateBookDetailRequest model)
         {

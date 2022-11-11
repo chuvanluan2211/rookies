@@ -67,7 +67,7 @@ namespace TestWebAPI.Services.Implements
             }
         }
 
-        public IEnumerable<Category> GetAll()
+        public IEnumerable<Category> GetAllCategory()
         {
             return _category.GetAll(s => true);
         }

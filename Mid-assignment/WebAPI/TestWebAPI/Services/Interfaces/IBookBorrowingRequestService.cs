@@ -9,7 +9,7 @@ namespace TestWebAPI.Services.Interfaces
 
         UpdateStatusResponse? UpdateStatus(UpdateStatusRequest model, int id);
 
-        IEnumerable<BookBorrowingRequest> GetAll();
+        IEnumerable<AllBookRequest> GetAllRequestDetail(int id);
 
         BookBorrowingRequest? CreateARequest( string name, int id);
     }

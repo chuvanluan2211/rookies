@@ -5,8 +5,6 @@ namespace TestWebAPI.Services.Interfaces
 {
     public interface IBookBorrowingRequestDetailService
     {
-        IEnumerable<BookBorrowingRequestDetail> GetAll(int id);
-
         CreateBookDetailResponse? CreateBookDetail(CreateBookDetailRequest model );
 
 

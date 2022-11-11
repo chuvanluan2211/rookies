@@ -6,9 +6,9 @@ namespace TestWebAPI.Repositories.Implements
 {
     public class BaseRepository<T> : IBaseRepository<T> where T : class
     {
-        private readonly DbSet<T> _dbSet;
+        protected readonly DbSet<T> _dbSet;
 
-        private readonly BookContext _context;
+        protected readonly BookContext _context;
         public BaseRepository(BookContext context)
         {
             _dbSet = context.Set<T>();

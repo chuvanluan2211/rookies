@@ -28,7 +28,7 @@ namespace TestWebAPI.Controllers
         [HttpGet("get-all-book")]
         public IEnumerable<Book> GetAll()
         {
-            return _bookService.GetAll();
+            return _bookService.GetAllBook();
         }
 
         [HttpPut("update-book")]

@@ -11,6 +11,6 @@ namespace TestWebAPI.Services.Interfaces
 
         bool DeleteBook(DeleteBook model , int id);
 
-        IEnumerable<Book> GetAll();
+        IEnumerable<Book> GetAllBook();
     }
 }

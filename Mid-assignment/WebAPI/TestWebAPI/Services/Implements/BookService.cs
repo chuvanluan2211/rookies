@@ -80,7 +80,7 @@ namespace TestWebAPI.Services.Implements
             }
         }
 
-        public IEnumerable<Book> GetAll()
+        public IEnumerable<Book> GetAllBook()
         {
             return _book.GetAll(s => true);
         }

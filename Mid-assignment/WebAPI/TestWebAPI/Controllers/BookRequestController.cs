@@ -21,11 +21,10 @@ namespace TestWebAPI.Controllers
         }
 
         [HttpGet("get-all-request")]
-        public IEnumerable<BookBorrowingRequest> GetAll()
+        public IEnumerable<AllBookRequest> GetAllBookUser(int id)
         {
-            return _statusService.GetAll();
+            return _statusService.GetAllRequestDetail(id);
         }
-
         [HttpPut("update-status")]
         public UpdateStatusResponse? UpdateStatus(UpdateStatusRequest model , int id)
         {
@@ -35,7 +34,20 @@ namespace TestWebAPI.Controllers
         [HttpPost("create-request")]
         public BookBorrowingRequest? CreateARequest( string name, int id)
         {
-            return _statusService.CreateARequest(name, id);
+            var createRequest = _statusService.CreateARequest(name, id);
+            if (createRequest == null)
+            {
+                //return new BookBorrowingRequest
+                //{
+                //    AcceptUser = "",
+                //    BookRequestId = 0,
+                //    RequestUser = "",
+                //    Status = "",
+                //    UserId = 0
+                //};
+                return null;
+            }
+            return createRequest;
         }
     }
 }

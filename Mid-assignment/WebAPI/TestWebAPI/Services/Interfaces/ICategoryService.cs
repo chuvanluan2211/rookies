@@ -11,6 +11,6 @@ namespace TestWebAPI.Services.Interfaces
 
         bool DeleteCate(DeleteCate model, int id);
 
-        IEnumerable<Category> GetAll();
+        IEnumerable<Category> GetAllCategory();
     }
 }

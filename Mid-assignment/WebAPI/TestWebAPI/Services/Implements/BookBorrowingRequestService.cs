@@ -8,39 +8,44 @@ namespace TestWebAPI.Services.Implements
 {
     public class BookBorrowingRequestService : IBookBorrowingRequestService
     {
-        private readonly IBookBorrowingRequestRepository _status;
+        private readonly IBookBorrowingRequestRepository _request;
 
-        public BookBorrowingRequestService(IBookBorrowingRequestRepository status)
+        public BookBorrowingRequestService(IBookBorrowingRequestRepository request)
         {
-            _status = status;
+            _request = request;
         }
 
-        public IEnumerable<BookBorrowingRequest> GetAll()
+        public IEnumerable<AllBookRequest> GetAllRequestDetail(int id)
         {
-            return _status.GetAll(s => true);
+            return _request.GetAllBookUser(id);
         }
 
         public BookBorrowingRequest? CreateARequest( string name, int id)
         {
-            using (var transaction = _status.DatabaseTransaction())
+            using (var transaction = _request.DatabaseTransaction())
             {
                 try
                 {
-                    var request = new BookBorrowingRequest
+                    var checkrequest = _request.CheckRequest(id);
+                    if(checkrequest < 3)
                     {
-                        AcceptUser = "",
-                        Status = "W",
-                        RequestUser = name,
-                        DateOfRequest = DateTime.Now.Date,
-                        UserId = id
-                    };
+                        var request = new BookBorrowingRequest
+                        {
+                            AcceptUser = "",
+                            Status = "W",
+                            RequestUser = name,
+                            DateOfRequest = DateTime.Now.Date,
+                            UserId = id
+                        };
 
-                    var newRequest = _status.Create(request);
+                        var newRequest = _request.Create(request);
 
-                    _status.SaveChanges();
-                    transaction.Commit();
+                        _request.SaveChanges();
+                        transaction.Commit();
 
-                    return newRequest;
+                        return newRequest;
+                    }
+                   return null;
                 }
                 catch
                 {
@@ -52,19 +57,19 @@ namespace TestWebAPI.Services.Implements
 
         public UpdateStatusResponse? UpdateStatus(UpdateStatusRequest model, int id)
         {
-            using (var transaction = _status.DatabaseTransaction())
+            using (var transaction = _request.DatabaseTransaction())
             {
                 try
                 {
-                    var status = _status.GetById(s => s.BookRequestId == id);
+                    var status = _request.GetById(s => s.BookRequestId == id);
 
                     if (status != null)
                     {
                         status.Status = model.Status;
 
-                        var updateStatus = _status.Update(status);
+                        var updateStatus = _request.Update(status);
 
-                        _status.SaveChanges();
+                        _request.SaveChanges();
                         transaction.Commit();
 
                         return new UpdateStatusResponse

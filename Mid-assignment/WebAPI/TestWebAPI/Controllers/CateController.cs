@@ -28,7 +28,7 @@ namespace TestWebAPI.Controllers
         [HttpGet("get-all-category")]
         public IEnumerable<Category> GetAll()
         {
-            return _cateService.GetAll();
+            return _cateService.GetAllCategory();
         }
 
         [HttpPut("update-category")]
